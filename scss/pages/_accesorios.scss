@@ -1,0 +1,48 @@
+@font-face{
+    font-family: grotesk;
+    src: url(../font/HKGrotesk-Medium.otf);
+}
+@font-face {
+    font-family: groteska;
+    src: url(../font/HKGrotesk-Light.otf);
+}
+@font-face {
+    font-family: groteskas;
+    src: url(../font/HKGrotesk-Regular.otf);
+}
+
+.accesorios{
+    width: 100%;
+    height: 90vh;
+    color: black;
+    background: url("../../img/airpods-header-accessories-202110.jpg") fixed center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f2f2f2;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        margin-left: 15px;
+        h1{
+            font-family: grotesk;
+        }
+        p{
+            font-family: groteskas;
+        }
+    }
+}
+@media (max-width: 768px){
+    .accesorios{
+        height: 85vh;
+        background: url(../../img/hero_airpods_left__e4mt0u0p25ea_small_2x.png) fixed center bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-color: #f2f2f2;
+        div{
+            padding-top: 55px;
+        }
+    }
+
+}

@@ -1,0 +1,56 @@
+@font-face{
+    font-family: grotesk;
+    src: url(../font/HKGrotesk-Medium.otf);
+}
+@font-face {
+    font-family: groteska;
+    src: url(../font/HKGrotesk-Light.otf);
+}
+@font-face {
+    font-family: groteskas;
+    src: url(../font/HKGrotesk-Regular.otf);
+}
+@mixin parrafo {
+    font-family: groteska;
+    color: orange;
+    font-size: 20px;
+    margin-top: 10px;
+}
+@mixin subtitulo {
+    font-family: groteskas;
+    font-size: 25px;
+}
+@mixin titulo {
+    font-family: grotesk;
+    font-size: 45px;
+}
+.publicidad{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        @include parrafo;
+    }
+    h3{
+        @include subtitulo;
+        text-align: center;
+    }
+    h2{
+        @include titulo;
+    }
+    img{
+       width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .publicidad {
+        height: 70vh;
+        img{
+            width: 100%;
+        }
+    }
+        
+}

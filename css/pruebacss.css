@@ -1,0 +1,348 @@
+@font-face {
+  font-family: grotesk;
+  src: url(../font/HKGrotesk-Medium.otf); }
+
+@font-face {
+  font-family: groteska;
+  src: url(../font/HKGrotesk-Light.otf); }
+
+@font-face {
+  font-family: groteskas;
+  src: url(../font/HKGrotesk-Regular.otf); }
+
+@font-face {
+  font-family: grote;
+  src: url(../../font/HKGrotesk-Bold.otf); }
+
+.divnav {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 16%; }
+
+.promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9; }
+  .promo h2 {
+    font-family: groteskas; }
+  .promo img {
+    width: 60px;
+    margin-left: 35px;
+    margin-right: 35px; }
+
+.section, .section__one, .section__two, .section__three, .section__four {
+  width: 100%;
+  height: 70vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.a, .section__one a, .section__two a, .section__three a, .section__four a {
+  font-family: "groteska";
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  margin-top: 30px;
+  text-shadow: 3px 3px 3px black; }
+  .a:hover, .section__one a:hover, .section__two a:hover, .section__three a:hover, .section__four a:hover {
+    color: black;
+    transition: 0.1s;
+    text-shadow: none; }
+
+.section__one {
+  flex-direction: column;
+  background: url("../img/pexels-torsten-dettlaff-3571093.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section__one h1 {
+    font-family: "grote";
+    font-size: 70px; }
+  .section__one p {
+    font-family: "groteskas";
+    font-size: 20px; }
+
+.section__two {
+  background: url("../img/pexels-torsten-dettlaff-3623358.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.section__three {
+  background: url(../img/pexels-jess-bailey-designs-788946.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.section__four {
+  flex-direction: column;
+  background: url(../img/soporte.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section__four p {
+    font-family: groteskas;
+    font-size: 25px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    margin-top: 10px;
+    background-color: #bcbab880;
+    border-radius: 4px;
+    border: solid 2px grey; }
+
+.footer {
+  background: url(../img/fondo-textura-marmol-blanco-textura-marmol-abstracta-patrones-naturales-diseno_41389-491.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .footer .redes {
+    text-align: center; }
+    .footer .redes img {
+      width: 50px;
+      height: 50px;
+      margin-top: 5px; }
+    .footer .redes a {
+      font-family: grotesk;
+      font-size: 20px;
+      text-decoration: none;
+      color: black;
+      text-shadow: 3px 3px 3px white; }
+    .footer .redes p {
+      font-family: grotesk;
+      font-size: 15px;
+      text-decoration: none;
+      color: #6c757d; }
+    .footer .redes h2 {
+      font-family: grotesk;
+      font-size: 25px;
+      margin-top: 35px; }
+  .footer .contacto h2 {
+    font-family: grotesk;
+    font-size: 30px; }
+  .footer .oficinas {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    .footer .oficinas h2 {
+      font-family: grotesk;
+      font-size: 30px; }
+    .footer .oficinas div h3 {
+      font-family: grotesk;
+      font-size: 25px;
+      margin-top: 10px; }
+    .footer .oficinas div p {
+      font-family: groteska;
+      font-size: 15px;
+      margin: 0%; }
+
+.footer__a {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px; }
+
+.instagram {
+  background-color: violet; }
+
+.twitter {
+  background-color: lightblue; }
+
+.facebook {
+  background-color: blue; }
+
+@media (max-width: 650px) {
+  .promo h2 {
+    font-size: 20px; }
+  .promo img {
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .footer {
+    display: flex;
+    flex-direction: column; }
+    .footer .contacto {
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 35px; }
+    .footer .oficinas {
+      text-align: center;
+      margin-top: 35px; } }
+
+
+.publicidad {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .publicidad p {
+    font-family: groteska;
+    color: orange;
+    font-size: 20px;
+    margin-top: 10px; }
+  .publicidad h3 {
+    font-family: groteskas;
+    font-size: 25px;
+    text-align: center; }
+  .publicidad h2 {
+    font-family: grotesk;
+    font-size: 45px; }
+  .publicidad img {
+    width: 50%; }
+
+@media (max-width: 800px) {
+  .publicidad {
+    height: 70vh; }
+    .publicidad img {
+      width: 100%; } }
+
+
+.accesorios {
+  width: 100%;
+  height: 90vh;
+  color: black;
+  background: url("../img/airpods-header-accessories-202110.jpg") fixed center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f2f2f2; }
+  .accesorios div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin-left: 15px; }
+    .accesorios div h1 {
+      font-family: grotesk; }
+    .accesorios div p {
+      font-family: groteskas; }
+
+@media (max-width: 768px) {
+  .accesorios {
+    height: 85vh;
+    background: url(../img/hero_airpods_left__e4mt0u0p25ea_small_2x.png) fixed center bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #f2f2f2; }
+    .accesorios div {
+      padding-top: 55px; } }
+
+.soporte {
+  font-family: grotesk;
+  font-size: 50px;
+  margin-left: 5%; }
+
+.form {
+  height: 80vh;
+  margin-top: 5%;
+  font-family: groteskas; }
+
+.form__div {
+  font-family: groteska; }
+
+
+.section__uno, .section__dos {
+  width: 100%;
+  height: 86vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: url("../img/camera_system__rp945vhdfsiu_large.png") center bottom;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .section__uno h1, .section__dos h1 {
+    font-family: grote;
+    font-size: 90px;
+    margin-top: 5%; }
+  .section__uno p, .section__dos p {
+    font-family: groteskas;
+    font-size: 20px; }
+
+.section__dos {
+  height: 110vh;
+  background: url("../img/fondo-textura-marmol-blanco-textura-marmol-abstracta-patrones-naturales-diseno_41389-491.webp") fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section__dos h2 {
+    font-family: grote;
+    font-size: 60px;
+    margin-top: 10%; }
+  .section__dos .section__dos-nosotros {
+    display: flex; }
+    .section__dos .section__dos-nosotros .section__dos-img {
+      margin-top: 5%; }
+    .section__dos .section__dos-nosotros .section__dos-text {
+      width: 50%;
+      margin-top: 3%; }
+      .section__dos .section__dos-nosotros .section__dos-text div {
+        margin-top: 10%; }
+        .section__dos .section__dos-nosotros .section__dos-text div h3 {
+          font-size: 35px; }
+        .section__dos .section__dos-nosotros .section__dos-text div p {
+          padding-top: 2%; }
+
+.section__tres div {
+  font-family: groteskas; }
+
+@media (max-width: 768px) {
+  .section__uno, .section__dos {
+    background-position: center; }
+    .section__uno h1, .section__dos h1 {
+      text-align: end;
+      padding-top: 90px;
+      font-size: 70px; }
+  .section__dos {
+    background-position: center;
+    height: 170vh;
+    text-align: center; }
+    .section__dos .section__dos-nosotros {
+      display: flex;
+      flex-direction: column; }
+    .section__dos .section__dos-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 120px; }
+      .section__dos .section__dos-text div {
+        text-align: center; } }
+
+
+        .img-card {
+          width: 100%;
+          margin-bottom: 10px;
+      }
+
+        #contenedor-productos {
+          max-width: 1200px;
+          margin: 60px auto;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+      }
+        .producto {
+          max-width: 20%;
+          padding: 10px;
+          margin: 10px;
+          margin-bottom: 20px;
+          box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+          border-radius: 5px;
+        }
+      .precioProducto {
+          font-weight: 700;
+      }
+      .boton-comprar {
+          
+          background-color: gray;
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          padding: 5px;
+          border-radius: 5px;
+      }

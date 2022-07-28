@@ -1,0 +1,243 @@
+@font-face{
+    font-family: grotesk;
+    src: url(../font/HKGrotesk-Medium.otf);
+}
+@font-face {
+    font-family: groteska;
+    src: url(../font/HKGrotesk-Light.otf);
+}
+@font-face {
+    font-family: groteskas;
+    src: url(../font/HKGrotesk-Regular.otf);
+}
+@font-face {
+    font-family: grote;
+    src: url(../../font/HKGrotesk-Bold.otf);
+}
+$font-h: 'grote';
+$font-p: 'groteskas';
+$font-a: 'groteska';
+$size-h: 70px;
+$size-p: 20px;
+$size-a: 30px;
+
+@mixin h-1{
+    font-family: $font-h;
+    font-size: $size-h;
+}
+@mixin pp{
+    font-family: $font-p;
+    font-size: $size-p;
+}
+@mixin aa{
+    font-family: $font-a;
+    font-size: $size-a;
+}
+
+$redes: (
+    facebook: blue,
+    twitter: lightblue,
+    instagram: violet,
+);
+
+.divnav{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 16%;
+}
+.promo{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #F9F9F9;
+    h2{
+        font-family: groteskas;
+    }
+    img{
+        width: 60px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+.section{
+    width: 100%;
+    height: 70vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a{
+    @include aa;
+        text-decoration: none;
+        color: white;
+        margin-top: 30px;
+        text-shadow: 3px 3px 3px black;
+            &:hover{
+                color: black;
+                transition: 0.1s;
+                text-shadow: none;
+            }
+}
+.section__one{
+    @extend .section;
+    flex-direction: column;
+    background: url("../img/pexels-torsten-dettlaff-3571093.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        @include h-1;
+    }
+    p{
+        @include pp;
+    }
+    a{
+        @extend .a;
+    }
+}
+.section__two{
+    @extend .section;
+    background: url("../img/pexels-torsten-dettlaff-3623358.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    a{
+        @extend .a;
+    }
+}
+.section__three{
+    @extend .section;
+    background: url(../img/pexels-jess-bailey-designs-788946.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    a{
+        @extend .a;
+    }
+}
+.section__four{
+    @extend .section;
+    flex-direction: column;
+    background: url(../img/soporte.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    a{
+        @extend .a;
+    }
+    p{
+        font-family: groteskas;
+        font-size: 25px;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        margin-top: 10px;
+        background-color: #bcbab880;
+        border-radius: 4px;
+        border: solid 2px grey; 
+    }
+}
+.footer{
+    background: url(../../img/fondo-textura-marmol-blanco-textura-marmol-abstracta-patrones-naturales-diseno_41389-491.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .redes{
+        text-align: center;
+        img{
+            width: 50px;
+            height: 50px;
+            margin-top: 5px;
+        }
+        a{
+            font-family: grotesk;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            text-shadow: 3px 3px 3px white;
+        }
+        p{
+            font-family: grotesk;
+            font-size: 15px;
+            text-decoration: none;
+            color: #6c757d;
+        }
+        h2{
+            font-family: grotesk;
+            font-size: 25px;
+            margin-top: 35px;
+        }
+    }
+    .contacto{
+        h2{
+            font-family: grotesk;
+            font-size: 30px;
+        }
+    }
+    .oficinas{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        h2{
+            font-family: grotesk;
+            font-size: 30px;
+        }
+        div{
+            h3{
+                font-family: grotesk;
+                font-size: 25px;
+                margin-top: 10px;
+            }
+            p{
+                font-family: groteska;
+                font-size: 15px;
+                margin: 0%;
+            }
+        }
+    }
+}
+.footer__a{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.instagram{
+    background-color: map-get($redes, instagram);
+}
+.twitter{
+    background-color: map-get($redes, twitter);
+}
+.facebook{
+    background-color: map-get($redes, facebook);    
+}
+
+@media (max-width: 650px){
+    .promo{
+        h2{
+            font-size: 20px;
+        }
+        img{
+            width: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        .contacto{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 35px;
+        }
+        .oficinas{
+            text-align: center;
+            margin-top: 35px;
+        }
+    }
+}

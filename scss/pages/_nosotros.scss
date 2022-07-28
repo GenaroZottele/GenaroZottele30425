@@ -1,0 +1,110 @@
+@font-face{
+    font-family: grotesk;
+    src: url(../../font/HKGrotesk-Medium.otf);
+}
+@font-face {
+    font-family: groteska;
+    src: url(../../font/HKGrotesk-Light.otf);
+}
+@font-face {
+    font-family: groteskas;
+    src: url(../../font/HKGrotesk-Regular.otf);
+}
+@font-face {
+    font-family: grote;
+    src: url(../../font/HKGrotesk-Bold.otf);
+}
+
+$font-h: grotesk;
+$font-p: groteskas;
+
+.section__uno{
+    width: 100%;
+    height: 86vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: url("../../img/camera_system__rp945vhdfsiu_large.png") center bottom;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    h1{
+        font-family: grote;
+        font-size: 90px;
+        margin-top: 5%;
+    }
+    p{
+        @include pp;
+    }
+}
+.section__dos{
+    @extend .section__uno;
+    height: 110vh;
+    background: url("../../img/fondo-textura-marmol-blanco-textura-marmol-abstracta-patrones-naturales-diseno_41389-491.webp") fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2{
+        font-family: grote;
+        font-size: 60px;
+        margin-top: 10%;
+    }
+    .section__dos-nosotros{
+        display: flex;
+        .section__dos-img{
+            margin-top: 5%;
+        }
+        .section__dos-text{
+            width: 50%;
+            margin-top: 3%;
+            div{
+                margin-top: 10%;
+                h3{
+                    font-size: 35px;
+                }
+                p{
+                    padding-top: 2%;
+                }
+            }
+        }
+
+    }
+    
+}
+.section__tres{
+    div{
+        font-family: groteskas;
+    }
+}
+@media (max-width: 768px){
+    .section__uno{
+        background-position: center;
+        h1{
+            text-align: end;
+            padding-top: 90px;
+            font-size: 70px;
+        }
+    }
+    .section__dos{
+        background-position: center;
+        height: 170vh;
+        text-align: center;
+        .section__dos-nosotros{
+            display: flex;
+            flex-direction: column;
+        }
+        .section__dos-text{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            margin-left: 120px;
+            
+            div{
+                text-align: center;
+                
+            }
+        }
+    }
+}
