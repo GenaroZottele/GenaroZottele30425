@@ -3,8 +3,7 @@ const productosEnCarro = document.getElementById('carrito-contenedor')
 const precioTotal = document.getElementById('precioTotal')
 const botonVaciar = document.getElementById('vaciar-carrito')
 const cantidad = document.getElementById('cantidad')
-const cantidadTotal = document.getElementById('cantidadTotal')
-const contadorCarrito = document.getElementById('contadorCarrito')
+
 
 let carrito = [];
 
