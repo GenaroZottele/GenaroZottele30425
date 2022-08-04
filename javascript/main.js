@@ -12,6 +12,15 @@ let carrito = [];
 botonVaciar.addEventListener('click', () => {
     carrito.length = 0
     pintarCarrito()
+    Toastify({
+        text: "Vacio su carrito!!",
+        duration: 3000,
+        gravity: 'top',
+        position: 'right',
+        style: {
+            background: 'linear-gradient(to right, violet, lightblue)'
+        }
+    }).showToast();
 })
 
 stockProductos.forEach((producto) => {
@@ -30,6 +39,16 @@ stockProductos.forEach((producto) => {
     boton.addEventListener('click', () => {
 
         agregarAlCarrito(producto.id)
+        Toastify({
+            text: "Agrego un producto a su carrito!!",
+            duration: 3000,
+            gravity: 'top',
+            position: 'right',
+            style: {
+                background: 'linear-gradient(to right, violet, lightblue)'
+            }
+        }).showToast();
+    
 
     })
 }) 
@@ -90,6 +109,16 @@ const eliminarDelCarrito = (prodId) => {
     carrito.splice(indice, 1) 
 
     pintarCarrito(carrito) 
+
+    Toastify({
+        text: "Elimino un producto!!",
+        duration: 3000,
+        gravity: 'top',
+        position: 'right',
+        style: {
+            background: 'linear-gradient(to right, violet, lightblue)'
+        }
+    }).showToast();
     
     console.log(carrito)
 }
