@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: grote;
-  src: url(../../font/HKGrotesk-Bold.otf); }
+  src: url(../font/HKGrotesk-Bold.otf); }
 
 .divnav {
   display: flex;
